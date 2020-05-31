@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 手指触摸时的 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- 填充的颜色 -->
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/skyblue" />
+
+            <corners android:radius="10dp" />
+            <!-- padding：Button里面的文字与Button边界的间隔 -->
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp"
+                />
+        </shape>
+    </item>
+
+    <!-- 默认的（触摸之前）button -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/aliceblue" />
+            <!--设置渐变-->
+            <gradient android:startColor="@color/aliceblue"
+                android:endColor="@color/skyblue"
+                android:angle="180"/>
+
+            <corners android:radius="10dp" />
+            <!-- padding：Button里面的文字与Button边界的间隔 -->
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp"
+                />
+        </shape>
+    </item>
+
+</selector>
